@@ -11,7 +11,7 @@ foreach ( $controller in $PnPoutput)
 	}
 }
 
-# Get array of Xbox One Device Class, and cleanup array for processing
+# Get array of Xbox Wireless Controller Device Class, and cleanup array for processing
 [array] $PnPoutput = pnputil /enum-devices /disconnected /class XboxComposite
 $PnPoutput = $PnPoutput -split ":" -replace ' ',''
 
